@@ -31,9 +31,7 @@ namespace FinalWork
 
         private Func<ClientCommand, Task> sendCommand;
 
-        public Window_Group_Chat(string name,
-            List<string> users,
-            Func<ClientCommand, Task> send)
+        public Window_Group_Chat(string name, List<string> users, Func<ClientCommand, Task> send)
         {
             InitializeComponent();
 
