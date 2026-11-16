@@ -70,8 +70,7 @@ namespace FinalWork
 
             try
             {
-                await client.ConnectAsync(
-                    IPAddress.Parse(remoteIP), port);
+                await client.ConnectAsync(IPAddress.Parse(remoteIP), port);
 
                 stream = client.GetStream();
 
@@ -86,6 +85,11 @@ namespace FinalWork
                 ServerListener();
 
                 MessageBox.Show("Connected!");
+                MainPanel.Visibility = Visibility.Visible;
+                MainPanel2.Visibility = Visibility.Visible;
+
+                ButtonContact.Visibility = Visibility.Visible;
+                ButtonGroup.Visibility = Visibility.Visible;
             }
             catch (Exception ex)
             {

@@ -16,7 +16,7 @@
             <TextBox FontSize="15" VerticalContentAlignment="Center" Margin="5">8080</TextBox>
             <Button FontWeight="Bold" Width="120" Click="Button_Okay" Margin="30,0,0,0" Background="GreenYellow" FontSize="20">Connection</Button>
         </ToolBar>
-        <Grid x:Name="MainPanel" DockPanel.Dock="Top">
+        <Grid x:Name="MainPanel" DockPanel.Dock="Top" Visibility="Collapsed">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
@@ -31,7 +31,7 @@
          ScrollViewer.HorizontalScrollBarVisibility="Disabled"></ListBox>
             <Button Grid.Column="2" Background="GreenYellow" FontSize="20" Padding="10" Margin="5" Click="Button_Go_Chat" >Lets move to the Chat</Button>
         </Grid>
-        <Grid x:Name="MainPanel2" DockPanel.Dock="Top" Width="1188">
+        <Grid x:Name="MainPanel2" DockPanel.Dock="Top" Width="1188" Visibility="Collapsed">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
@@ -44,7 +44,7 @@
             <ListBox Margin="5" SelectionMode="Multiple" VerticalContentAlignment="Center" Height="60" Grid.Column="1" x:Name="Checking_contacts" ScrollViewer.VerticalScrollBarVisibility="Auto"
             ScrollViewer.HorizontalScrollBarVisibility="Disabled"></ListBox>
         </Grid>
-        <Button x:Name="ButtonContact" Height="60" Width="250" DockPanel.Dock="Top" Background="GreenYellow" FontSize="20" Margin="5" Grid.Row="1" Click="Button_Contact">Create Contacts:</Button>
-        <Button x:Name="ButtonGroup" Height="60" Width="250" DockPanel.Dock="Top" Background="GreenYellow" FontSize="20" Margin="5" Grid.Row="1" Click="Button_Group_Chat">Create Groups Chat:</Button>
+        <Button Visibility="Collapsed" x:Name="ButtonContact" Height="60" Width="250" DockPanel.Dock="Top" Background="GreenYellow" FontSize="20" Margin="5" Grid.Row="1" Click="Button_Contact">Create Contacts:</Button>
+        <Button Visibility="Collapsed" x:Name="ButtonGroup" Height="60" Width="250" DockPanel.Dock="Top" Background="GreenYellow" FontSize="20" Margin="5" Grid.Row="1" Click="Button_Group_Chat">Create Groups Chat:</Button>
     </DockPanel>
 </Window>
